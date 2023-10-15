@@ -1,0 +1,331 @@
+.all_post_window {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(1, 9, 24) ;
+}
+
+
+.all_post_window h2 {
+    color: skyblue;
+    font-size: 30px;
+    margin-top: 90px;
+}
+.all_product {
+    width: 90%;
+    margin: 20px auto;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.postCard {
+    width: 250px;
+    height: 400px;
+    overflow: hidden;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    cursor: pointer;
+}
+.postCard:hover {
+    transform: translateY(-4px);
+    -webkit-transform: translateY(-4px);
+    -moz-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    -o-transform: translateY(-4px);
+}
+.imageCard {
+    flex-basis: 55%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.imageCard img {
+    width: 100%;
+    object-fit: contain   ;
+    aspect-ratio: 2/3;
+    /* background-position: cover; */
+}
+.cardContent {
+    display: flex;
+    flex-basis: 45%;
+    flex-direction: column;
+    padding: 8px;
+}
+.cardContent h3 {
+    font-size: 15px;
+    padding-bottom: 7px ;
+    color: rgb(2, 142, 249);
+}
+.cardContent p {
+    font-size: 9px;
+    color: rgb(140, 136, 136);
+    font-weight: 300;
+    height: 50px;
+}
+.cardContent h5 {
+    padding: 8px 0px;
+    font-size: 13px;
+    color: rgb(0, 110, 255);
+}
+.createdContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 7px;
+    color: rgb(0, 0, 0);
+}
+.createdContent span{
+    font-size: 8px;
+}
+.cardContent button {
+    bottom: 0;
+}
+.buttonCon {
+    display : flex;
+    justify-content: space-between;
+    border-top: 0.7px solid rgb(232, 223, 223);
+    padding-top: 10px;
+    align-items: center;
+}
+.buttonCon span {
+    font-size: 8px;
+    color: rgb(122, 119, 119);
+}
+.buttonCon button {
+    width: 50%;
+}
+ 
+
+/* Most visited componenet  */
+.most_visited {
+    width : 100%;
+    overflow-x : hidden;
+    min-height : 60vh;
+    background:rgb(1, 9, 24) ;
+}
+.slick-slider  {
+    margin : 10px auto;
+    width: 90%;
+    padding: 10px;
+}  
+  .slick-slide div {
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+    padding-top : 10px;
+  }
+
+
+/* EDITING POST CARD  */
+
+.post_card {
+    z-index: 5;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgb(1, 7, 18) ;
+    margin: 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.img_post {
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: white;
+    margin-top : -30px;
+}
+
+.img_post_inside {
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 2/3;
+}
+.post_detail {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    max-height: 70px;
+    min-height: 50px;
+    overflow: scroll;
+}
+.post_detail::-webkit-scrollbar {
+    display: none;
+}
+.post_detail h3 {
+    font-size: 1em;
+    margin: 10px ;
+}
+.date_shop {
+    width : 100%;
+    display : flex;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.date_shop span {
+    width: 60px;
+    max-height: 40px;
+    display: flex;
+    flex-basis: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+    margin: 2px 10px;
+    background: rgba(27 32 44 / 70%);
+    backdrop-filter: blur(5px);
+    backface-visibility: hidden;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    font-size:8px;
+    font-weight: 300;
+}
+.date_shop span i {
+    padding: 5px;
+}
+.date_card {
+    width: 87%;
+    margin: 2px auto;
+    max-height: 40px;
+    color: white;
+    display: flex;
+    flex-basis: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background: rgba(27 32 44 / 70%);
+    backdrop-filter: blur(5px);
+    backface-visibility: hidden;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    font-size:8px;
+    font-weight: 300;
+}
+.date_card i {
+    padding: 5px;
+}
+
+.btn_card {
+    width: 87%;
+    margin : 20px auto;
+    font-size: 11px
+}
+
+/* DIALOG BOX FOR INFORMATION  */
+
+.dialog_content {
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.dialog_img {
+    flex-basis: 50%;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.dialog_img > img {
+    width: 100%;
+} 
+.dialog_info {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.dialog_desc{
+    font-size: 0.8em;
+    margin: 10px ;
+    color: white;
+    font-weight: 400;
+}
+.link_btn {
+    box-shadow: inset 5px 5px 10px #0c67f1, inset -5px -5px 10px #0051ff, 0px 0px 100px rgba(59, 209, 255, 0), 0px 0px 100px rgba(25, 201, 255, 0);
+    
+}
+.dialog_title{
+    font-size: 25px;
+    text-align: left;
+    width: 90%;
+}
+ 
+.dialog_close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: rgba(255, 60, 0, 0.59);
+}
+@media (max-width  : 650px) {
+    .dialog_content{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .dialog_img{
+        max-width: 270px;
+    }
+    .dialog_title{
+        font-size: 15px;
+        width: 80%;
+    }
+    .dialog_info {
+        width: 100%;
+        margin: 0;
+    }
+    .css-ypiqx9-MuiDialogContent-root {
+        padding: 8px;
+    }
+}

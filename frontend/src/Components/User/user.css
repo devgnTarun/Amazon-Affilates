@@ -1,0 +1,195 @@
+.login_page {
+    width: 100%;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.login_container {
+    width: 80%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: rgba(27 32 44 / 70%);
+    backdrop-filter: blur(5px);
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+    margin: 80px auto;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50% , -20%);
+    -webkit-transform: translate(-50% , -20%);
+    -moz-transform: translate(-50% , -20%);
+    -ms-transform: translate(-50% , -20%);
+    -o-transform: translate(-50% , -20%);
+}
+
+.login_box {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.login_box h1 {
+    color : var(--primary-color);
+    font-size: 1.8em;
+    font-weight: 600;
+    margin: 14px auto;
+    letter-spacing: 1px;
+}
+.avtarBox {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.avtarBox img {
+    width: 100%;
+}
+.login_box form {
+    display: flex;
+    width: 90%;
+    margin: 5px auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login_box form input  {
+    width: 80%;
+    border: none;
+    outline: none;
+    padding: 10px 5px;
+    margin: 15px auto;
+    background-color: rgba(222, 216, 216, 0.167);
+    border-left : 3px solid var(--primary-color);
+    color: white;
+}
+.login_box form input::placeholder-shown {
+    color: white;
+}
+.image_file {
+    background-color: none;
+    padding: none;
+    color: white;
+}
+.image_file::-webkit-file-upload-button {
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color:  transparent;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+}
+.login_btn {
+    width: 80%;
+    margin: 10px auto;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+}
+.login_btn:hover {
+    background-color: var(--primary-hover);
+}
+.signbtn {
+    color : var(--primary-color);
+    margin: 10px auto;
+    outline: none;
+    text-decoration: none;
+}
+.signbtn:hover {
+    color : white;
+}
+
+.login_image {
+    flex-basis: 40%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes floating {
+    0% {
+        transform: translateY(0px)    ;
+        -webkit-transform: translateY(0px)    ;
+        -moz-transform: translateY(0px)    ;
+        -ms-transform: translateY(0px)    ;
+        -o-transform: translateY(0px)    ;
+}
+    25% {
+        transform: translateY(3px)    ;
+        -webkit-transform: translateY(3px)    ;
+        -moz-transform: translateY(3px)    ;
+        -ms-transform: translateY(3px)    ;
+        -o-transform: translateY(3px)    ;
+}
+    50% {
+        transform: translateY(-3px)    ;
+        -webkit-transform: translateY(-3px)    ;
+        -moz-transform: translateY(-3px)    ;
+        -ms-transform: translateY(-3px)    ;
+        -o-transform: translateY(-3px)    ;
+}
+    100% {
+        transform: translateY(0px)    ;
+        -webkit-transform: translateY(0px)    ;
+        -moz-transform: translateY(0px)    ;
+        -ms-transform: translateY(0px)    ;
+        -o-transform: translateY(0px)    ;
+}
+
+}
+
+.login_image img {
+    width: 60%;
+    animation: 2s floating linear infinite;
+    -webkit-animation: 2s floating linear infinite;
+}
+
+@media (max-width : 870px) {
+    .login_container {
+        width: 90%;
+        min-height: 50vh;
+    }
+}
+@media (max-width : 650px) {
+    .login_container {
+    flex-direction: column;
+    margin : 70px auto;
+    }
+    .login_box form input  {
+        width: 90%;
+    }
+    .login_btn {
+        width: 90%;
+    }
+    .login_image {
+        display: none;
+    }
+}
